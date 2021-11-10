@@ -1,0 +1,6 @@
+Type: 0
+Base: 1000
+Inc: 100
+Rounds: 10000
+Ponder: 0
+NumParallel: 4

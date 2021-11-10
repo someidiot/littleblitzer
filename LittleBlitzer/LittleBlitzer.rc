@@ -1,0 +1,274 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LITTLEBLITZER_DIALOG DIALOGEX 0, 0, 627, 364
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LittleBlitzer"
+FONT 8, "Courier New", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "GO!",IDC_START,89,71,66,39
+    EDITTEXT        IDC_STATUS,7,120,613,237,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Load Tournament Settings",IDC_TOURNAMENT,422,22,149,14,BS_MULTILINE
+    EDITTEXT        IDC_ENGINE_FILE,81,7,317,13,ES_AUTOHSCROLL
+    LTEXT           "Engines file:",IDC_STATIC,7,8,59,12
+    PUSHBUTTON      "Load Engines",IDC_LOAD_ENGINES,422,7,149,14
+    PUSHBUTTON      "Pause\n(zero threads)",IDC_PAUSE,179,75,66,31,BS_MULTILINE
+    PUSHBUTTON      "...",IDC_OPEN_ENGINES,400,7,14,14,BS_BITMAP
+    EDITTEXT        IDC_TOURN_FILE,81,22,317,13,ES_AUTOHSCROLL
+    LTEXT           "Tournament file:",IDC_STATIC,7,23,71,12
+    PUSHBUTTON      "...",IDC_OPEN_TOURN,400,22,14,14,BS_BITMAP
+    EDITTEXT        IDC_SAVE_PGN,81,38,317,13,ES_AUTOHSCROLL
+    LTEXT           "Save PGN:",IDC_STATIC,7,39,49,12
+    PUSHBUTTON      "Copy",IDC_COPYTEXT,587,105,32,15
+    LTEXT           "0",IDC_NUMTHREADS,283,81,58,23
+    PUSHBUTTON      "+",IDC_INC,253,73,26,16
+    PUSHBUTTON      "-",IDC_DEC,253,92,26,16
+    CONTROL         "Log First Engine (LittleBlitzer.log)",IDC_CHK_LOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,387,66,175,12
+    GROUPBOX        "Number of threads",IDC_STATIC,169,63,176,54
+    CONTROL         "Dump illegal moves",IDC_CHK_ILLEGAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,387,82,162,11
+    CONTROL         "Write full game in PGN result file",IDC_CHK_FULLPGN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,387,96,166,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "LittleBlitzer.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "LittleBlitzer.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LITTLEBLITZER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 620
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 357
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TOURN_SETTINGS DIALOGEX 0, 0, 370, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tournament Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Gauntlet",IDC_GAUNTLET,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,15,45,14
+    CONTROL         "Round-Robin",IDC_ROUNDROBIN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,67,17,65,10
+    CONTROL         "Standard",IDC_STANDARD,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,54,44,10
+    CONTROL         "Chess960",IDC_CHESS960,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,67,54,47,10
+    EDITTEXT        IDC_ROUNDS,261,16,55,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARALLEL,261,34,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HASH,171,52,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MATESCORE,73,89,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MATEMOVES,73,105,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DRAWMOVES,73,121,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIMEBASE,225,109,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIMEINC,225,125,52,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Ponder",IDC_PONDER,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,262,53,37,10
+    CONTROL         "Own Book",IDC_OWNBOOK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,307,53,48,10
+    CONTROL         "Opening",IDC_OPENING,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,164,43,10
+    CONTROL         "FEN",IDC_FEN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,101,164,29,10
+    CONTROL         "EPD",IDC_EPD,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,157,164,29,10
+    CONTROL         "PGN",IDC_PGN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,209,164,29,10
+    EDITTEXT        IDC_STARTING,17,180,346,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,257,206,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,313,206,50,14
+    GROUPBOX        "Type",IDC_STATIC,7,7,128,30
+    LTEXT           "Total Number of Games:",IDC_STATIC,145,17,103,15
+    LTEXT           "Base:",IDC_TC_LBL_1,180,110,26,12
+    LTEXT           "Increment:",IDC_TC_LBL_2,180,127,41,12
+    LTEXT           "Hash:",IDC_STATIC,145,54,23,12
+    GROUPBOX        "Variant",IDC_STATIC,7,42,128,30
+    LTEXT           "Num Parallel Tournaments (1-16):",IDC_STATIC,145,35,113,12
+    GROUPBOX        "Adjudications",IDC_STATIC,7,78,126,61
+    LTEXT           "Mate Score (cp):",IDC_STATIC,17,90,54,12
+    LTEXT           "Mate Moves:",IDC_STATIC,17,106,43,12
+    LTEXT           "Draw Moves:",IDC_STATIC,17,122,43,12
+    GROUPBOX        "Starting Positions",IDC_STATIC,7,151,356,48
+    LTEXT           "MB",IDC_STATIC,230,54,18,12
+    LTEXT           "ms",IDC_TC_LBL_3,279,110,57,9
+    LTEXT           "ms",IDC_TC_LBL_4,280,127,60,9
+    GROUPBOX        "Time Control",IDC_STATIC,149,82,214,61
+    CONTROL         "Fixed Time/Move",IDC_FIXEDTPM,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,157,92,67,10
+    CONTROL         "Blitz",IDC_BLITZ,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,235,91,50,10
+    CONTROL         "Tournament",IDC_TOURN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,291,91,54,10
+    CONTROL         "Randomize",IDC_RANDOMIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,277,162,51,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TOURN_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LittleBlitzer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LittleBlitzer.ico"
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\LittleBlitzer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

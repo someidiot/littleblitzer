@@ -1,0 +1,7 @@
+readpgn debug\results.pgn
+elo
+mm
+covariance
+offset 2300 LittleThought v1.03
+ratings
+x

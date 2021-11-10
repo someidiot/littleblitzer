@@ -1,0 +1,11 @@
+readpgn PGNs\Results_1+0.1_1.06.76i7.pgn
+readpgn PGNs\Results_1+0.1_1.06.70-b.pgn
+readpgn PGNs\Results_1+0.1_1.05.pgn
+readpgn PGNs\Results_1+0.1_RR_adj_1200_15_150.pgn
+readpgn release\results.pgn
+elo
+mm
+covariance
+offset 2350 LittleThought v1.04
+ratings
+x
